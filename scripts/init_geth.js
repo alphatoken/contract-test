@@ -1,3 +1,7 @@
+function initCompiler() {
+    admin.setSolc("/usr/bin/solc");
+}
+
 function initUser() {
     var userCount = 4;
     for (var i = 0; i < userCount; i++) {
@@ -16,4 +20,5 @@ function initUser() {
     }
 }
 
+initCompiler();
 initUser();
